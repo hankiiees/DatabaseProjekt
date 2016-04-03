@@ -1,0 +1,7 @@
+package controlers.object;
+
+public class Ingredient {
+	private String name;
+	private 
+
+}

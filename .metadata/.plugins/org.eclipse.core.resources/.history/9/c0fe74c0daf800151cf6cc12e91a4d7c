@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlers.MainController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="640.0">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <TabPane layoutX="-2.0" prefHeight="480.0" prefWidth="640.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab id="logInTab" fx:id="LogInTab" closable="false" text="Login">
+               <content>
+                  <Pane prefHeight="480.0" prefWidth="640.0">
+                     <children>
+                        <fx:include source="LoginTab.fxml" />
+                     </children>
+                  </Pane>
+               </content></Tab>
+          <Tab fx:id="IngredientTab" closable="false" text="ingredients">
+               <content>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+                     <children>
+                        <fx:include source="Ingredients.fxml" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab fx:id="RecipiesTab" closable="false" text="Recipies">
+               <content>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+                     <children>
+                        <fx:include source="Recipies.fxml" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab fx:id="OrderTab" closable="false" text="Order">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="OrderTab.fxml" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab fx:id="ProductionTab" closable="false" text="Production">
+               <content>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+                     <children>
+                        <fx:include source="Production.fxml" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

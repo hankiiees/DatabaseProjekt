@@ -1,0 +1,52 @@
+package controler;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.text.Text;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import application.Database;
+import javafx.collections.FXCollections;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Button;
+
+public class IngredientCtrl extends PageJavaFx {
+	@FXML
+	private Text text;
+	@FXML
+	private Label NbrInStock;
+	@FXML
+	private ListView<String> IngredientArray;
+	@FXML
+	private TextField OrderNbr;
+	@FXML
+	private Button OrderButton;
+	private Database db;
+
+	@Override
+	public void initialize() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@FXML
+	private void ButtonPressed(ActionEvent e) {
+
+	}
+
+	@Override
+	public void ButtonPress(ActionEvent e) {
+
+	}
+
+	@Override
+	public void setDatabase(Database db) {
+		this.db = db;
+	}
+
+}

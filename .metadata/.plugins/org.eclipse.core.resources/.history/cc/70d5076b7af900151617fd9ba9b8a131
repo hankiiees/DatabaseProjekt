@@ -1,0 +1,42 @@
+package controler;
+
+import java.net.URL;
+import java.time.LocalDate;
+import java.util.ResourceBundle;
+
+import application.Database;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.ListView;
+
+public class OrderCtrl extends PageJavaFx {
+	Database db;
+	@FXML ListView<String> CookieList;
+	@FXML DatePicker DeliveryDate; 
+	private LocalDate Date; 
+	@Override
+	public void initialize() {
+		//Ladda in alla kakor
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void ButtonPress(ActionEvent e) {
+		Date = DeliveryDate.getValue();
+
+	}
+
+	@Override
+	public void setDatabase(Database db) {
+		this.db=db;
+
+	}
+	//gör denna? 
+	public void userChanged() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
