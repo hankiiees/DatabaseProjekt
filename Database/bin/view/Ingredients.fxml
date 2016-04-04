@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.IngredientCtrl">
    <children>
       <ImageView fitHeight="406.0" fitWidth="600.0">
          <image>
@@ -25,7 +25,7 @@
       <ListView fx:id="IngredientArray" centerShape="false" layoutX="-1.0" layoutY="66.0" opacity="0.29" prefHeight="333.0" prefWidth="297.0" />
       <Label contentDisplay="CENTER" layoutX="96.0" layoutY="14.0" text="Ingredients" />
       <Label layoutX="390.0" layoutY="14.0" text="Quantity" />
-      <Button fx:id="OrderButton" layoutX="349.0" layoutY="302.0" mnemonicParsing="false" text="Order more" />
+      <Button fx:id="OrderButton" layoutX="349.0" layoutY="302.0" mnemonicParsing="false" onAction="#ButtonPress" text="Order more" />
       <Label layoutX="307.0" layoutY="109.0" prefHeight="45.0" prefWidth="126.0" text="In Stock:" />
       <Label layoutX="307.0" layoutY="177.0" prefHeight="45.0" prefWidth="101.0" text="Order: " />
       <TextField fx:id="OrderNbr" layoutX="422.0" layoutY="168.0" prefHeight="65.0" prefWidth="126.0" />
